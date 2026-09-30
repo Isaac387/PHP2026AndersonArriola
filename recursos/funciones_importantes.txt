@@ -1,0 +1,36 @@
+En este documento voy a guardar funciones que yo considere importantes y para que sirven
+----------------------------------------------------------------------------------------
+variables
+----------
+PHP_INT_MIN = variable para ponerle el menor valor a una variable
+PHP_INT_MAX = variable para ponerle el maximo valor a una variable
+-----------
+funciones
+-----------
+
+nl2br(); = esta funcion hace que los \n en una cadena de texto se conviertan en <br> como html
+sirve para cuando guardamos una cadena en php y queremos mostrar esa cadena en el html
+
+array_column($array_que_usemos, 'columna_que_queremos_coger_datos'); = esta funcion devuelve un array con los datos 
+de la columna especificada en el segundo parametro.
+
+array_key_last($array_que_usemos)= Con esta funcion cogemos la ultima clave de un array multidimensional o normal.
+
+------------------------------
+ordenar arrays funciones sort
+------------------------------
+sort() = de menor a mayor
+rsort() = de mayor a menor
+asort() = ordena por valores de menor a mayor
+rsort() = ordena por valores de mayor a menor
+ksort() = ordenana por clave alfabeticamente A-Z
+krsort() = ordena por clave alfabeticamente Z-A
+
+Arrays multidemendsionales maneras de ordenadorlos por valores
+--------------------------------------------------------------
+
+uasort($paises, function ($a, $b) {
+        return $a["Poblacion"] <=> $b["Poblacion"];
+    })
+uasort sirve para arreglar de menor a mayor por un valor y no cambia las claves a diferencia de asort();
+para que sea de mayor a menor solo cambiar el valor de $a y $b
