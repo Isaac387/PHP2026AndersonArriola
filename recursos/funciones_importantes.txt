@@ -4,6 +4,9 @@ variables
 ----------
 PHP_INT_MIN = variable para ponerle el menor valor a una variable
 PHP_INT_MAX = variable para ponerle el maximo valor a una variable
+usando .= se pueden meter datos de arrays en cadenas de texto por ejemplo:
+
+$holaMundo. =
 -----------
 funciones
 -----------
