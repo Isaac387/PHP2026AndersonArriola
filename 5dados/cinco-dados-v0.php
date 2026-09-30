@@ -71,16 +71,13 @@ function generarImagenes(array $tdados): string
   global $tcharDados;
   // COMPLETAR SOLO MUESTRA EL VALOR DE UN DADO 
  
-  for ($i = 0; $i < count($tdados); $i++) {
-    // foreach ($tdados as $key => $value) {
-    //   $valor = $key;
-    //   $msg .= "<span style='font-size:100px;'>" . $tcharDados[$valor] . "</span>";
-    //   return $msg;
-    // }
-    $valor = $tdados[$i];
+ foreach ($tdados as $key => $value) {
+   $valor = $key;
     $msg .= "<span style='font-size:100px;'>" . $tcharDados[$valor] . "</span>";
+ }
+    // 
+     
   
-  }
   return $msg;
 }
 
