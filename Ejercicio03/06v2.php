@@ -44,7 +44,7 @@ $ciudades = [
     <title>ejer06v2</title>
 </head>
 <body>
-    <h1>Pais mas poblado ordenando el array <span><?=$pais?></span></h1>
+    <h1>Pais mas poblado ordenando el array:  <span><?=$pais?></span></h1>
     <?php
     //la funcion nl2br solo es para que los \n funcionen como br en cadena de texto en php
     //echo nl2br($pais_con_mas_poblacion). "<br>";
