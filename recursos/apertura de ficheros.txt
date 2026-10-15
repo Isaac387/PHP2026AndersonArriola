@@ -1,0 +1,33 @@
+Modo | Descripción
+Esto es para usar con la funcion fopen() de php
+r: Apertura para lectura. Puntero al principio del archivo
+r+: Apertura para lectura y escritura. Puntero al principio del archivo
+w: Apertura para escritura. Puntero al principio del archivo y lo sobreescribe. Si no existe se intenta crear.
+w+: Apertura para lectura y escritura. Puntero al principio del archivo y lo sobreescribe. Si no existe se intenta crear.
+a: Apertura para escritura. Puntero al final del archivo. Si no existe se intenta crear.
+a+: Apertura para lectura y escritura. Puntero al final del archivo. Si no existe se intenta crear.
+x: Creación y apertura para sólo escritura. Puntero al principio del archivo. Si el archivo ya existe dará error E_WARNING. Si no existe se intenta crear.
+x+: Creación y apertura para lectura y escritura. Mismo comportamiento que x.
+c: Apertura para escritura. Si no existe se crea. Si existe no se sobreescribe ni da ningún error. Puntero al principio del archivo.
+c+: Apertura para lectura y escritura. Mismo comportamiento que c.
+
+fread($archivo_donde_se_vuelva_el_archivo, filesize("nombre del archivo")) = esta funcion sirve para leer un fichero y devuelve el contenido del fichero en una cadena de texto
+------------------
+filesize("nombre del archivo") = esta funcion devuelve el tamaño del archivo en bytes
+-------------------------
+fgetc($archivo_donde_se_vuelva_el_archivo) = esta funcion devuelve un caracter del archivo y 
+cada vez que se llama a la funcion devuelve el siguiente caracter del archivo
+--------------------
+fgets($archivo_donde_se_vuelva_el_archivo) = esta funcion devuelve una linea del archivo y
+cada vez que se llama a la funcion devuelve la siguiente linea del archivo
+----------------------
+feof($archivo_donde_se_vuelva_el_archivo) = esta funcion devuelve true si se ha llegado al final del archivo y
+ false si no se ha llegado al final del archivo
+----------------------
+
+rewind($archivo_donde_se_vuelva_el_archivo) = esta funcion devuelve el puntero del archivo al principio del archivo
+---------------------------
+
+file_get_contents("nombre del archivo") = esta funcion devuelve el contenido del archivo en un string
+--------------------
+file() = esta funcion devuelve el contenido del archivo en un array, cada linea del archivo es un elemento del array
