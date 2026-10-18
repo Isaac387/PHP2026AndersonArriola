@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con múltiples campos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Formulario con múltiples campos</h1>
+  </header>
+
+  <form action="04.php" method="post">
+
+    <fieldset>
+      <legend>Campos de texto:</legend>
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="Pepe">
+      </p>
+      <p>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" value="123456">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Radio:</legend>
+      <p>
+        <input type="radio" id="rojo" name="color" value="rojo" checked>
+        <label for="rojo">Rojo</label>
+      </p>
+      <p>
+        <input type="radio" id="naranja" name="color" value="naranja">
+        <label for="naranja">Naranja</label>
+      </p>
+      <p>
+        <input type="radio" id="verde" name="color" value="verde">
+        <label for="verde">Verde</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Checkbox:</legend>
+      <p>
+        <label for="publicidad">Quiero recibir publicidad</label><br>
+        <input type="checkbox" id="publicidad" name="publicidad" value="no" checked> <br>
+      </p>
+
+      <legend>Multi checkbox:</legend>
+      <p>
+        <label for="ingles">Inglés</label>
+        <input type="checkbox" id="ingles" name="idiomas" value="ingles">
+        <label for="frances">Francés</label>
+        <input type="checkbox" id="frances" name="idiomas" value="frances" checked>
+        <label for="aleman">Alemán</label>
+        <input type="checkbox" id="aleman" name="idiomas" value="aleman">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select:</legend>
+
+      <p><strong>Simple:</strong></p>
+      <p>
+        <label for="anio">Año de finalización de estudios:</label>
+        <select id="anio" name="anio">
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016" selected>2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+        </select>
+      </p>
+
+      <p><strong>Múltiple:</strong></p>
+      <p>
+        <label for="ciudades">Ciudades:</label>
+        <select id="ciudades" name="ciudades[]" multiple size="4">
+          <option value="23">Asturias</option>
+          <option value="22" selected>Gerona</option>
+          <option value="98989">Madrid</option>
+          <option value="44" selected>Sevilla</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Textarea:</legend>
+      <p>
+        <label for="comentarios">Escriba sus comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="30">Este formulario es muy completo</textarea>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Botones:</legend>
+      <p>
+        <input type="reset" value="Resetear el formulario">
+        <input type="submit" value="Enviar formulario al servidor">
+      </p>
+    </fieldset>
+
+  </form>
+
+</body>
+</html>

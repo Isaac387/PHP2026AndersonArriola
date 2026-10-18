@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos personales</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Datos personales</h1>
+
+  <form action="05.php" method="post">
+
+    <p>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" value="Ana">
+    </p>
+
+    <p>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" value="Pérez Pérez">
+    </p>
+
+    <p>
+      <label for="edad">Edad:</label>
+      <select id="edad" name="edad">
+        <option value="menor18">Menor de 18</option>
+        <option value="18-35">De 18 a 35</option>
+        <option value="36-55">De 36 a 55</option>
+        <option value="mayor55" selected>Mayor de 55</option>
+      </select>
+    </p>
+
+    <p>
+      Sexo:
+      <input type="radio" id="hombre" name="sexo" value="hombre">
+      <label for="hombre">Hombre</label>
+      <input type="radio" id="mujer" name="sexo" value="mujer" checked>
+      <label for="mujer">Mujer</label>
+    </p>
+
+    <p>Hobbies:</p>
+    <p>
+      <input type="checkbox" id="lectura" name="hobbies[]" value="lectura" checked>
+      <label for="lectura">lectura</label>
+    </p>
+    <p>
+      <input type="checkbox" id="tele" name="hobbies[]" value="tele" checked>
+      <label for="tele">ver la tele</label>
+    </p>
+    <p>
+      <input type="checkbox" id="deporte" name="hobbies[]" value="deporte">
+      <label for="deporte">hacer deporte</label>
+    </p>
+    <p>
+      <input type="checkbox" id="marcha" name="hobbies[]" value="marcha">
+      <label for="marcha">Salir de marcha</label>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
+
+  </form>
+</body>
+</html>
