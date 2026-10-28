@@ -37,3 +37,11 @@ uasort($paises, function ($a, $b) {
     })
 uasort sirve para arreglar de menor a mayor por un valor y no cambia las claves a diferencia de asort();
 para que sea de mayor a menor solo cambiar el valor de $a y $b
+
+$patron = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,}$/"
+patron para Comprobar que la contraseña tenga:
+- Al menos una minúscula.
+- Al menos una mayúscula.
+- Al menos un número.
+- Al menos un carácter especial.
+- Un mínimo de 8 caracteres.
