@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accesoCliente</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            width: 90%;
+            max-width: 450px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #1a3c5e;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            color: #1a3c5e;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #1a3c5e;
+        }
+
+        .btn-enviar {
+            width: 100%;
+            background-color: #1a3c5e;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-enviar:hover {
+            background-color: #2c527a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CONTROL DE ACCESO E-COMERCIO</h1>
+        </header>
+        <form action="controlpedido.php" method="get">
+            <label for="nombre">Nombre de cliente:</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="clave">Contraseña:</label>
+            <input type="password" name="clave" id="clave">
+
+            <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
+        </form>
+    </div>
+</body>
+</html>
